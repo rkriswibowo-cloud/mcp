@@ -1,0 +1,7 @@
+{
+  "CBO": "Local Python file coupling; import and explicit literal .py dependency; outbound distinct local project modules, mean over Q modules, NOT class-level CKJM.",
+  "Cohm": "Within module, 10*R/P; class methods and @server.tool functions; related iff share self attribute or call same local imported helper; report Q, M, P, R per module; NA if no pair.",
+  "NLOC": "Nonempty noncomment lines, including docstrings and decorators, exclusive layers separated from shared provider.",
+  "Ripple": "Measured separately in validate_modularity_v4.py, five contract breaks on actual project copies; third gateway arm not mutation-tested.",
+  "design": "5 logical simulated clients, 10 deterministic mocks; structural metrics are single deterministic evaluations, not n=5 independent samples."
+}

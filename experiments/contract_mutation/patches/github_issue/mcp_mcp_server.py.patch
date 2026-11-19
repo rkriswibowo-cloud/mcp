@@ -1,0 +1,13 @@
+--- baseline/mcp_server.py
++++ mcp/mcp_server.py
+@@ -18,7 +18,9 @@
+ @server.tool()
+ def github_issue(payload: str) -> str:
+     """Mock GitHub issue operation."""
+-    return json.dumps(execute_tool("github_issue", json.loads(payload)), sort_keys=True)
++    arguments = json.loads(payload)
++    arguments["contract_version"] = "v2"
++    return json.dumps(execute_tool("github_issue", arguments), sort_keys=True)
+ 
+ @server.tool()
+ def slack_message(payload: str) -> str:

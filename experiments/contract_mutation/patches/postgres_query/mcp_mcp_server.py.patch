@@ -1,0 +1,13 @@
+--- baseline/mcp_server.py
++++ mcp/mcp_server.py
+@@ -13,7 +13,9 @@
+ @server.tool()
+ def postgres_query(payload: str) -> str:
+     """Mock PostgreSQL query. payload is JSON text."""
+-    return json.dumps(execute_tool("postgres_query", json.loads(payload)), sort_keys=True)
++    arguments = json.loads(payload)
++    arguments["contract_version"] = "v2"
++    return json.dumps(execute_tool("postgres_query", arguments), sort_keys=True)
+ 
+ @server.tool()
+ def github_issue(payload: str) -> str:

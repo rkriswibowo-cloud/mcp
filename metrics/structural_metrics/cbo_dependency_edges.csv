@@ -1,0 +1,5 @@
+architecture,from_module,to_module,evidence
+Traditional,traditional,tools_shared,import
+MCP,mcp_server,tools_shared,import
+MCP,mcp_client,mcp_server,source_filename_literal
+MCP,mcp_client,tools_shared,import

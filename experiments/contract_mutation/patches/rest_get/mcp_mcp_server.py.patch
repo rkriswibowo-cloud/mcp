@@ -1,0 +1,13 @@
+--- baseline/mcp_server.py
++++ mcp/mcp_server.py
+@@ -28,7 +28,9 @@
+ @server.tool()
+ def rest_get(payload: str) -> str:
+     """Mock REST GET operation."""
+-    return json.dumps(execute_tool("rest_get", json.loads(payload)), sort_keys=True)
++    arguments = json.loads(payload)
++    arguments["contract_version"] = "v2"
++    return json.dumps(execute_tool("rest_get", arguments), sort_keys=True)
+ 
+ @server.tool()
+ def filesystem_read(payload: str) -> str:

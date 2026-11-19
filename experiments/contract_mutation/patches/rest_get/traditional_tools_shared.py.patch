@@ -1,0 +1,11 @@
+--- baseline/tools_shared.py
++++ traditional/tools_shared.py
+@@ -14,6 +14,8 @@
+         raise ValueError(f"Unknown tool: {name}")
+     if not isinstance(arguments, dict):
+         raise TypeError("Tool arguments must be a dictionary")
++    if name == "rest_get" and arguments.get("contract_version") != "v2":
++        raise ValueError("contract_version=v2 required")
+     payload = json.dumps({"name": name, "args": arguments}, sort_keys=True)
+     token = hashlib.sha256(payload.encode()).hexdigest()[:16]
+     return {"tool": name, "ok": True, "token": token, "mode": "local_mock"}

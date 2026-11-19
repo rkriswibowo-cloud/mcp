@@ -1,0 +1,27 @@
+{
+  "date_generated_utc": "2026-10-21T01:34:35.228515+00:00",
+  "python_version": "3.13.16",
+  "official_mcp_sdk_version": "1.30.0",
+  "static_analysis_definitions": {
+    "CBO": "For each integration Python module: count distinct locally coupled project modules; imports and literal .py filename references; mean across Q integration modules. Excludes third-party imports; module-level proxy not exact Java CKJM CBO.",
+    "Cohm": "For each integration module: methods=class methods (including lifecycle) or ten @server.tool decorated module functions; a related pair shares self.attribute or calls same project-local imported helper; Cohm_i=10*Ri/[Mi*(Mi-1)/2]; unweighted mean across Q modules; operationalization of manuscript formula, not validated CKJM metric.",
+    "Ripple_Effect": "For each of five distinct externally imposed tool contract breaks, count integration .py files actually modified to restore all 50 calls; common provider mock separately recorded. New copies per scenario and architecture; real SDK client-server round trips."
+  },
+  "experiment_constraints": [
+    "Five logical client IDs are NOT five functioning LLMs",
+    "Ten tool names are deterministic local mocks, NOT real remote services",
+    "Direct integration uses one generic adapter class for all 50 logical client-tool pairs",
+    "Runtime and structural metrics may differ from original manuscript and cannot retrospectively prove its historical results",
+    "Static structural means over Q=1 vs Q=2 modules are not five independent statistical repetitions",
+    "The five contract scenarios are five change types, not randomized statistical sampling",
+    "An API gateway/adapter could equally localize changes; benefit is not MCP-specific"
+  ],
+  "original_manuscript_figures": "Not used as inputs or tuning targets",
+  "source_sha256": {
+    "tools_shared.py": "2673e37f79650e4ab0ad567d2df8643a8add350d9ff5ee6a382971f7a19e6c74",
+    "traditional.py": "13e84360559bec9e1cbce02c320e3ea3cbac36c4923aaa948b4a6b79254837db",
+    "mcp_server.py": "aebc22627ac6cee078d60c1dd131286898882fdc0011dba96c2c69f7a42d1175",
+    "mcp_client.py": "8c3312afeda68827daa9ade6c202f55a07a088d35ab758d555c1e9aff6c1f59e"
+  },
+  "status": "FULL SDK MUTATION PROBES COMPLETED"
+}

@@ -1,0 +1,16 @@
+trial,architecture,successful_calls,setup_ms,calls_ms,nip_analytic,reachability_analytic
+1,Traditional,50,0.031626,0.799492,50,1
+1,Non-MCP gateway,50,0.006066,0.696778,15,5
+1,Official MCP SDK,50,2115.513413,330.226616,15,5
+2,Traditional,50,0.03598,0.805856,50,1
+2,Non-MCP gateway,50,0.007091,0.719863,15,5
+2,Official MCP SDK,50,2175.643085,455.657544,15,5
+3,Traditional,50,0.044401,1.55442,50,1
+3,Non-MCP gateway,50,0.006545,1.379531,15,5
+3,Official MCP SDK,50,2696.180536,322.050607,15,5
+4,Traditional,50,0.032541,0.801435,50,1
+4,Non-MCP gateway,50,0.004876,0.721218,15,5
+4,Official MCP SDK,50,2084.755406,331.43041,15,5
+5,Traditional,50,0.035335,0.777159,50,1
+5,Non-MCP gateway,50,0.00478,0.702068,15,5
+5,Official MCP SDK,50,2125.922521,324.230169,15,5

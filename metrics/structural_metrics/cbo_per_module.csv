@@ -1,0 +1,4 @@
+architecture,module,CBO_i,coupled_to,metric
+Traditional,traditional,1,tools_shared,local_code_and_filename_coupling
+MCP,mcp_server,1,tools_shared,local_code_and_filename_coupling
+MCP,mcp_client,2,mcp_server;tools_shared,local_code_and_filename_coupling

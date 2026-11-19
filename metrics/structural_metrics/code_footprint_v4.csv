@@ -1,0 +1,6 @@
+architecture,file,scope,physical,nonblank_noncomment
+Traditional,traditional.py,integration,14,12
+Non-MCP gateway,gateway_non_mcp.py,integration,19,16
+Official MCP SDK,mcp_client.py,integration,40,35
+Official MCP SDK,mcp_server.py,integration,59,47
+Shared,tools_shared.py,shared_provider,19,17

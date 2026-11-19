@@ -1,0 +1,5 @@
+architecture,module,M_i,P_i,R_i,Cohm_i_0_10
+Traditional,traditional,2,1,1,10.0
+Non-MCP gateway,gateway_non_mcp,2,1,1,10.0
+Official MCP SDK,mcp_client,3,3,2,6.666667
+Official MCP SDK,mcp_server,10,45,45,10.0

@@ -1,0 +1,13 @@
+--- baseline/mcp_server.py
++++ mcp/mcp_server.py
+@@ -8,7 +8,9 @@
+ @server.tool()
+ def mysql_query(payload: str) -> str:
+     """Mock MySQL query. payload is JSON text."""
+-    return json.dumps(execute_tool("mysql_query", json.loads(payload)), sort_keys=True)
++    arguments = json.loads(payload)
++    arguments["contract_version"] = "v2"
++    return json.dumps(execute_tool("mysql_query", arguments), sort_keys=True)
+ 
+ @server.tool()
+ def postgres_query(payload: str) -> str:

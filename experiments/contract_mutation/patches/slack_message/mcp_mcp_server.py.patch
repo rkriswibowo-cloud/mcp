@@ -1,0 +1,13 @@
+--- baseline/mcp_server.py
++++ mcp/mcp_server.py
+@@ -23,7 +23,9 @@
+ @server.tool()
+ def slack_message(payload: str) -> str:
+     """Mock Slack message operation."""
+-    return json.dumps(execute_tool("slack_message", json.loads(payload)), sort_keys=True)
++    arguments = json.loads(payload)
++    arguments["contract_version"] = "v2"
++    return json.dumps(execute_tool("slack_message", arguments), sort_keys=True)
+ 
+ @server.tool()
+ def rest_get(payload: str) -> str:

@@ -1,0 +1,39 @@
+{
+  "generated_utc": "2026-10-21T01:34:39.658551+00:00",
+  "source_sha256": {
+    "tools_shared.py": "2673e37f79650e4ab0ad567d2df8643a8add350d9ff5ee6a382971f7a19e6c74",
+    "traditional.py": "13e84360559bec9e1cbce02c320e3ea3cbac36c4923aaa948b4a6b79254837db",
+    "gateway_non_mcp.py": "e3fb0d9325c1edc1078eb0329c8610a10059d6d9b46b5acf1be456d4aa9feef1",
+    "mcp_server.py": "aebc22627ac6cee078d60c1dd131286898882fdc0011dba96c2c69f7a42d1175",
+    "mcp_client.py": "8c3312afeda68827daa9ade6c202f55a07a088d35ab758d555c1e9aff6c1f59e",
+    "experiment_v4.py": "ba418fc171a40b0d28a496bdaf1254f6915451538ab9adc430cdbebf5efb478c",
+    "analyze_structure_v4.py": "842609d921986118ee36459a466325640a35c7590a390e08c8cf1952ca7d7d87",
+    "validate_modularity_v4.py": "7d63996f965e4a1eb84c6ca09c377adcd4dbf0f757f3156efb44592fd426ab4d",
+    "report_v4.py": "2149a3544c5edd86aa2bb0bf44050305d72e6fc07355527ee1ac6332a3434962",
+    "test_v4.py": "d30bf27da2e569bdff79dbf6eacf681e2b76019fec720a7b0135334f12aa478c"
+  },
+  "package_versions": {
+    "mcp": "1.30.0",
+    "pytest": "8.4.2",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.0"
+  },
+  "python": "3.13.16",
+  "n_measured_repetitions": 5,
+  "mutations": [
+    "github_issue",
+    "mysql_query",
+    "postgres_query",
+    "rest_get",
+    "slack_message"
+  ],
+  "n_mutation_scenarios": 5,
+  "unit_of_analysis": "timing: repetitions; CBO/Cohm: source modules; Ripple: five different API contract-change scenarios",
+  "model_type": "five simulated client IDs, NOT five real LLM inference runs",
+  "tool_type": "ten local deterministic mocks, NOT remote services",
+  "historical_manuscript_values": "never used as algorithm inputs or measurement targets",
+  "ripple_gateway": "not measured; gateway included only in analytic/static/runtime sensitivity comparisons",
+  "transport_fairness": "direct/gateway in-process, MCP separate stdio process",
+  "TINT": "not measured",
+  "limitations": "tiny prototype; Python file-level coupling proxy; custom cohesion; no production validation"
+}

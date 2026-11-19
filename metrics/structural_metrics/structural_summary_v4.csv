@@ -1,0 +1,4 @@
+architecture,Q_cbo,cbo_mean,Q_cohm,cohm_mean_0_10,integration_NLOC,shared_provider_NLOC,coding_note
+Traditional,1,1.0,1,10.0,12,17,NLOC != original manuscript integration-only LOIC
+Non-MCP gateway,1,1.0,1,10.0,16,17,NLOC != original manuscript integration-only LOIC
+Official MCP SDK,2,1.5,2,8.3333335,82,17,NLOC != original manuscript integration-only LOIC

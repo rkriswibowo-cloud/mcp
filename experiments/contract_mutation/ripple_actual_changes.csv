@@ -1,0 +1,11 @@
+scenario_tool,architecture,before_repair_failed_calls,after_repair_failed_calls,after_repair_successful_calls,RE_modified_integration_modules,modified_integration_files,modified_provider_files,modified_total_source_files,actual_modified_source_files,definition
+mysql_query,Traditional,5,0,50,1,traditional.py,1,2,tools_shared.py;traditional.py,count of actual integration source files edited to restore passing tool contract
+mysql_query,MCP,5,0,50,1,mcp_server.py,1,2,mcp_server.py;tools_shared.py,count of actual integration source files edited to restore passing tool contract
+postgres_query,Traditional,5,0,50,1,traditional.py,1,2,tools_shared.py;traditional.py,count of actual integration source files edited to restore passing tool contract
+postgres_query,MCP,5,0,50,1,mcp_server.py,1,2,mcp_server.py;tools_shared.py,count of actual integration source files edited to restore passing tool contract
+github_issue,Traditional,5,0,50,1,traditional.py,1,2,tools_shared.py;traditional.py,count of actual integration source files edited to restore passing tool contract
+github_issue,MCP,5,0,50,1,mcp_server.py,1,2,mcp_server.py;tools_shared.py,count of actual integration source files edited to restore passing tool contract
+slack_message,Traditional,5,0,50,1,traditional.py,1,2,tools_shared.py;traditional.py,count of actual integration source files edited to restore passing tool contract
+slack_message,MCP,5,0,50,1,mcp_server.py,1,2,mcp_server.py;tools_shared.py,count of actual integration source files edited to restore passing tool contract
+rest_get,Traditional,5,0,50,1,traditional.py,1,2,tools_shared.py;traditional.py,count of actual integration source files edited to restore passing tool contract
+rest_get,MCP,5,0,50,1,mcp_server.py,1,2,mcp_server.py;tools_shared.py,count of actual integration source files edited to restore passing tool contract

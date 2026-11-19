@@ -1,0 +1,13 @@
+{
+  "study": "prospective reconstruction with three comparison architectures",
+  "n_trials_per_arm": 5,
+  "n_logical_client_identifiers": 5,
+  "n_deterministic_local_mock_tools": 10,
+  "python": "3.13.16",
+  "timing_design": "in-process direct/gateway vs MCP stdio; not transport-matched",
+  "nip": "topology-derived; not independent empirical observation",
+  "reachability": "topology-derived; not independent model inference test",
+  "TINT": "not measured (requires timed developer interventions)",
+  "static_metrics": "NOT replicated n=5; fixed source has one CBO and Cohm profile",
+  "manuscript_numbers": "not used as inputs or targets"
+}

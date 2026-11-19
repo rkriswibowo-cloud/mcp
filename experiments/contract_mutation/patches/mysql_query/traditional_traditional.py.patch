@@ -1,0 +1,9 @@
+--- baseline/traditional.py
++++ traditional/traditional.py
+@@ -11,4 +11,6 @@
+         }
+ 
+     def call(self, client: str, tool: str, arguments: dict) -> dict:
++        if tool == "mysql_query":
++            arguments = {**arguments, "contract_version": "v2"}
+         return self.adapters[(client, tool)](arguments)

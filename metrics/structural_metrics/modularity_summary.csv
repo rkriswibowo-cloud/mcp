@@ -1,0 +1,3 @@
+architecture,Q_CBO_modules,CBO_mean,Q_Cohm_modules,Cohm_mean_0_10,N_change_scenarios,RE_mean_actual_modified_integration_modules,scope
+Traditional,1,1.0,1,10.0,5,1.0,small reconstructed mock-tool Python prototype
+MCP,2,1.5,2,8.333334,5,1.0,small reconstructed mock-tool Python prototype
